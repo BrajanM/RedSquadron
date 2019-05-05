@@ -6,8 +6,8 @@ public class trackMove : MonoBehaviour {
 
 
     public float speed;
-    Vector2 offset;
-    
+    Vector3 offset;
+   
 	// Use this for initialization
 	void Start ()
     {
@@ -21,7 +21,7 @@ public class trackMove : MonoBehaviour {
         if (UIMenager.gameOver==false)
         {
 
-            offset = new Vector2(0, Time.time * speed);
+            offset = new Vector3(0, Time.timeSinceLevelLoad* speed,0);
             GetComponent<Renderer>().material.mainTextureOffset = offset;
 
         }

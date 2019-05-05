@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d0cb18c563fae74c82418a4ca542fcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -8
+  explosion: {fileID: 1057886781124856, guid: 424564056f42e0e4482ace693fbff7c5, type: 2}
+  enemyship: {fileID: 4460377448458932}
 --- !u!212 &212681239844423942
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -5,8 +5,10 @@ using UnityEngine;
 public class enemyShipMove : MonoBehaviour {
 
 
-    
-    
+
+
+    public GameObject explosion;
+    public Transform enemyship;
 	// Use this for initialization
 	void Start ()
     {
@@ -22,5 +24,10 @@ public class enemyShipMove : MonoBehaviour {
 
 
 	}
-   
+    void OnTriggerEnter2D(Collider2D hitInfo)
+    {
+        Destroy(gameObject);
+        UIMenager.Score++;
+        Instantiate(explosion,enemyship.position,transform.rotation=Quaternion.identity);
+    }
 }
