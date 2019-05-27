@@ -24,7 +24,14 @@ public class EnemyDestroyer : MonoBehaviour {
         {
             Destroy(col.gameObject);
 
+
             UIMenager.Score++;
+        }
+        if (col.gameObject.tag == "NIObject")
+        {
+            Destroy(col.gameObject);
+
+           
         }
     }
 }

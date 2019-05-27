@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy_Ship
+  - NIObject
+  - ShipLaser
+  - EnemyLaser
   layers:
   - Default
   - TransparentFX
@@ -41,4 +44,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: objects
+    uniqueID: 2133753637
+    locked: 0
+  - name: background
+    uniqueID: 2748898821
     locked: 0

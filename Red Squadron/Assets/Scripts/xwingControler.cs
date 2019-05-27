@@ -41,5 +41,10 @@ public class xwingControler : MonoBehaviour {
             Destroy(gameObject);
             UIMenager.gameOver = true;
         }
+        if (col.gameObject.tag == "EnemyLaser")
+        {
+            Destroy(gameObject);
+            UIMenager.gameOver = true;
+        }
     }
 }

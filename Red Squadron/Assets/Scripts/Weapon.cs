@@ -7,10 +7,11 @@ public class Weapon : MonoBehaviour
     public GameObject prefab;
     public float shootTime=0;
     public float minShootTime = 120;
+
     // Use this for initialization
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -23,6 +24,7 @@ public class Weapon : MonoBehaviour
             {
                 Shoot();
                 shootTime = 0;
+                
             }
            
         }

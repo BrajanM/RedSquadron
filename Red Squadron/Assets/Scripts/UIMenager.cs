@@ -9,6 +9,7 @@ public class UIMenager : MonoBehaviour {
 
     public static bool gameOver = false;
 
+    
 
     public Text scoreText;
     public Text TimeText;
@@ -80,16 +81,26 @@ public class UIMenager : MonoBehaviour {
 
         }
 
+        if (score==20)
+        {
+            Scene scene = SceneManager.GetActiveScene();
+            if (scene.name=="lvl1")
+            {
+                SceneManager.LoadScene("lvl2_Hoth");
+            }
+        }
+        
+
 
     }
 
     public void Replay()
     {
-       
 
-        Application.LoadLevel("lvl1");
 
-        
+        Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+
+
         gameOver = false;
         ShipSpawner.Speed = -5f;
 
